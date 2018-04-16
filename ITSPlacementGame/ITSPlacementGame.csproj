@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Calculator.cs" />
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
     <Compile Include="Assets\Scripts\Math.cs" />
+    <Compile Include="Assets\Scripts\ProvinceSelect.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
