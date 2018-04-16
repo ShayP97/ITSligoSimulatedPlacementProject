@@ -20,6 +20,12 @@ public class Calculator : MonoBehaviour
 
     public GameObject wrongPanel;
 
+    public Button nextButton1;
+
+    public Button nextButton2;
+
+    public Button nextButton3;
+
     string inputValue;
 
     string enter;
@@ -54,7 +60,37 @@ public class Calculator : MonoBehaviour
         }
         else
         {
-            wrongPanel.SetActive(true);
+            wrongPanel.SetActive(true); //tea + cookie & Milk + Chiken salad
+        }
+
+    }
+
+    public void OKButton2()
+    {
+        answer = inputField.text; //graps the current answer and stores it
+
+        if (answer == "2.00") //checks for the correct answer
+        {
+            correctPanel.SetActive(true); //turns on the panel to display "Correct!"            
+        }
+        else
+        {
+            wrongPanel.SetActive(true); //tea + cookie & Milk + Chiken salad
+        }
+
+    }
+
+    public void OKButton3()
+    {
+        answer = inputField.text; //graps the current answer and stores it
+
+        if (answer == "5.75") //checks for the correct answer
+        {
+            correctPanel.SetActive(true); //turns on the panel to display "Correct!"            
+        }
+        else
+        {
+            wrongPanel.SetActive(true); //tea + cookie & Milk + Chiken salad
         }
 
     }
