@@ -20,6 +20,8 @@ public class Calculator : MonoBehaviour
 
     public GameObject wrongPanel;
 
+    public GameObject nextPanel;
+
     public Button nextButton1;
 
     public Button nextButton2;
@@ -56,7 +58,8 @@ public class Calculator : MonoBehaviour
 
         if(answer == "3.75") //checks for the correct answer
         {
-            correctPanel.SetActive(true); //turns on the panel to display "Correct!"            
+            correctPanel.SetActive(true); //turns on the panel to display "Correct!"     
+            nextPanel.SetActive(true);       
         }
         else
         {
@@ -71,11 +74,12 @@ public class Calculator : MonoBehaviour
 
         if (answer == "2.00") //checks for the correct answer
         {
-            correctPanel.SetActive(true); //turns on the panel to display "Correct!"            
+            correctPanel.SetActive(true); //turns on the panel to display "Correct!"   
+            nextPanel.SetActive(true);
         }
         else
         {
-            wrongPanel.SetActive(true); //tea + cookie & Milk + Chiken salad
+            wrongPanel.SetActive(true); 
         }
 
     }
