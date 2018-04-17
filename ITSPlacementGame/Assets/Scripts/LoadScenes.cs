@@ -10,4 +10,9 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("Cafe");
     }
 
+    public void LoadPO()
+    {
+        SceneManager.LoadScene("PostOfficeMinigame1");
+    }
+
 }
