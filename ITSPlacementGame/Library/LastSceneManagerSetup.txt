@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/BCFact.unity
+- path: Assets/Scenes/PostOfficeMinigame3.unity
   isLoaded: 1
   isActive: 1
