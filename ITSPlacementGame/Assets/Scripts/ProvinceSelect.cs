@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class ProvinceSelect : MonoBehaviour
 {
     public GameObject checkPanel;
-    public GameObject proButton;
+    public GameObject sendButton;
 
     public void CorrectProvince()
     {
-       
+        checkPanel.SetActive(true);
+        sendButton.SetActive(true);
     }
 
     //public void OnMouseClick()

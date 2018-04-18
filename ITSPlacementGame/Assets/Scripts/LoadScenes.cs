@@ -20,4 +20,9 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("BCFact");
     }
 
+    public void LoadPostScene2()
+    {
+        SceneManager.LoadScene("PostOfficeMinigame2");
+    }
+
 }
