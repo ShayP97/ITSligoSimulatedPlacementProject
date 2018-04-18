@@ -8,14 +8,21 @@ public class ProvinceSelect : MonoBehaviour
     public GameObject checkPanel;
     public GameObject sendButton;
 
-    public void CorrectProvince()
+    public void CorrectProvince1()
+    {
+        checkPanel.SetActive(true);
+        sendButton.SetActive(true);
+    }
+    public void CorrectProvince2()
     {
         checkPanel.SetActive(true);
         sendButton.SetActive(true);
     }
 
-    //public void OnMouseClick()
-    //{
-    //    checkPanel.SetActive(true);
-    //}
+    public void CorrectCity()
+    {
+        checkPanel.SetActive(true);
+        sendButton.SetActive(true);
+    }
+
 }

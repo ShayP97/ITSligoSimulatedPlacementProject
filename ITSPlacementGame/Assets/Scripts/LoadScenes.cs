@@ -24,5 +24,19 @@ public class LoadScenes : MonoBehaviour
     {
         SceneManager.LoadScene("PostOfficeMinigame2");
     }
+    public void LoadNVFact()
+    {
+        SceneManager.LoadScene("NVFact");
+    }
+
+    public void LoadPostScene3()
+    {
+        SceneManager.LoadScene("PostOfficeMinigame3");
+    }
+
+    public void LoadONFact()
+    {
+        SceneManager.LoadScene("ONFact");
+    }
 
 }
