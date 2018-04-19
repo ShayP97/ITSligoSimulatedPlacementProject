@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
 {
+    public GameObject postPanel;
+
     public void LoadMainScene()
     {
         SceneManager.LoadScene("Main Scene");
     }
+
     public void LoadCafe()
     {
         SceneManager.LoadScene("Cafe");
