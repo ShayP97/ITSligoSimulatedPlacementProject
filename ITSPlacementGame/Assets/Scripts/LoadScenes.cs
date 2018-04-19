@@ -5,9 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
 {
+    public void LoadMainScene()
+    {
+        SceneManager.LoadScene("Main Scene");
+    }
     public void LoadCafe()
     {
         SceneManager.LoadScene("Cafe");
+    }
+
+    public void LoadCafeIntro()
+    {
+        SceneManager.LoadScene("CafeIntro");
     }
 
     public void LoadPO()

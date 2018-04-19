@@ -28,10 +28,6 @@ public class Calculator : MonoBehaviour
 
     public Button nextButton3;
 
-    string inputValue;
-
-    string enter;
-
     string answer;
 
     public void ButtonSelected()
@@ -43,7 +39,7 @@ public class Calculator : MonoBehaviour
 
     public void BackButton()
     {
-        inputField.text = " "; //Clears the current display
+        inputField.text = "$"; //Clears the current display
 
         if (wrongPanel == true)
         {
@@ -56,14 +52,14 @@ public class Calculator : MonoBehaviour
     {
         answer = inputField.text; //graps the current answer and stores it
 
-        if(answer == "3.75") //checks for the correct answer
+        if(answer == "$3.75") //checks for the correct answer
         {
             correctPanel.SetActive(true); //turns on the panel to display "Correct!"     
             nextPanel.SetActive(true);       
         }
         else
         {
-            wrongPanel.SetActive(true); //tea + cookie & Milk + Chiken salad
+            wrongPanel.SetActive(true); 
         }
 
     }
@@ -72,7 +68,7 @@ public class Calculator : MonoBehaviour
     {
         answer = inputField.text; //graps the current answer and stores it
 
-        if (answer == "2.00") //checks for the correct answer
+        if (answer == "$2.00") //checks for the correct answer
         {
             correctPanel.SetActive(true); //turns on the panel to display "Correct!"   
             nextPanel.SetActive(true);
@@ -88,13 +84,13 @@ public class Calculator : MonoBehaviour
     {
         answer = inputField.text; //graps the current answer and stores it
 
-        if (answer == "5.75") //checks for the correct answer
+        if (answer == "$5.75") //checks for the correct answer
         {
             correctPanel.SetActive(true); //turns on the panel to display "Correct!"            
         }
         else
         {
-            wrongPanel.SetActive(true); //tea + cookie & Milk + Chiken salad
+            wrongPanel.SetActive(true); 
         }
 
     }
