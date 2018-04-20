@@ -86,7 +86,8 @@ public class Calculator : MonoBehaviour
 
         if (answer == "$5.75") //checks for the correct answer
         {
-            correctPanel.SetActive(true); //turns on the panel to display "Correct!"            
+            correctPanel.SetActive(true); //turns on the panel to display "Correct!"   
+            nextPanel.SetActive(true);
         }
         else
         {

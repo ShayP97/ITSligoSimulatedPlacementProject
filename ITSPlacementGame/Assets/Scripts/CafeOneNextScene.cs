@@ -15,4 +15,9 @@ public class CafeOneNextScene : MonoBehaviour
         SceneManager.LoadScene("CafeMinigame1Q3");
     }
 
+    public void ToEndScene()
+    {
+        SceneManager.LoadScene("CafeEnd");
+    }
+
 }

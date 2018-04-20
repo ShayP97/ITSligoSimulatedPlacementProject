@@ -16,7 +16,7 @@ public class UnlockLevel : MonoBehaviour
     {
         postPass = inputFieldMain.text;
 
-        if (postPass == "TheWisePixy")
+        if (postPass == "STAMPS")
         {
             postPanel.SetActive(true);
         }
