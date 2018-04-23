@@ -22,6 +22,11 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("CafeIntro");
     }
 
+    public void LoadPOIntro()
+    {
+        SceneManager.LoadScene("PostOfficeIntro");
+    }
+
     public void LoadPO()
     {
         SceneManager.LoadScene("PostOfficeMinigame1");
