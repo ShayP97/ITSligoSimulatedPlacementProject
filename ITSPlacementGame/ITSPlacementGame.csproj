@@ -84,9 +84,9 @@
     <Compile Include="Assets\Scripts\CafeOneNextScene.cs" />
     <Compile Include="Assets\Scripts\Calculator.cs" />
     <Compile Include="Assets\Scripts\Hint.cs" />
+    <Compile Include="Assets\Scripts\LetterSelect.cs" />
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
     <Compile Include="Assets\Scripts\LoadText.cs" />
-    <Compile Include="Assets\Scripts\Math.cs" />
     <Compile Include="Assets\Scripts\ProvinceSelect.cs" />
     <Compile Include="Assets\Scripts\UnlockLevel.cs" />
   </ItemGroup>
