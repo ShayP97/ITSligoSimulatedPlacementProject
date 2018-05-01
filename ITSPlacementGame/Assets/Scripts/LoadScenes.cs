@@ -10,6 +10,12 @@ public class LoadScenes : MonoBehaviour
     public void LoadMainScene()
     {
         SceneManager.LoadScene("Main Scene");
+        //postPanel.SetActive(true);
+    }
+
+    public void ReLoadMainScene()
+    {
+        SceneManager.LoadScene("Main Scene");
     }
 
     public void LoadCafe()

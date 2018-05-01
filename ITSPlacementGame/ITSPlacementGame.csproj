@@ -83,6 +83,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CafeOneNextScene.cs" />
     <Compile Include="Assets\Scripts\Calculator.cs" />
+    <Compile Include="Assets\Scripts\DraggableLetters.cs" />
     <Compile Include="Assets\Scripts\Hint.cs" />
     <Compile Include="Assets\Scripts\LetterSelect.cs" />
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
