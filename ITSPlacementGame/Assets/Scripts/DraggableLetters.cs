@@ -8,12 +8,16 @@ using UnityEngine.UI;
 public class DraggableLetters : MonoBehaviour
 {
     public string DraggableLetter = "Letter";
+    public string letterSlot = "Slot";
+
     public bool beingDragged = false;
 
     private Vector2 originalPos;
 
     private Transform letterToDrag;
     private Image letterToDragImage;
+
+    public GameObject slotPanel;
 
     List<RaycastResult> hitLetters = new List<RaycastResult>();
 	
