@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
     <Compile Include="Assets\Scripts\LoadText.cs" />
     <Compile Include="Assets\Scripts\ProvinceSelect.cs" />
+    <Compile Include="Assets\Scripts\SceneFadeIn.cs" />
     <Compile Include="Assets\Scripts\UnlockLevel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

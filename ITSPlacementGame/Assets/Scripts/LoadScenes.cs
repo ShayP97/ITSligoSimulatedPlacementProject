@@ -62,4 +62,11 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("ONFact");
     }
 
+    IEnumerator ChangeScene()
+    {
+        float fadeTime = GameObject.Find("Fade_Oject").GetComponent<SceneFadeIn>().BeginFadeIn(1);
+        yield return new WaitForSeconds(fadeTime);
+        SceneManager.LoadScene(Application.loadedLevel + 1); 
+    }
+
 }
