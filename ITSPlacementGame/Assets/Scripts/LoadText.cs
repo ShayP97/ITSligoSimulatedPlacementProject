@@ -10,6 +10,7 @@ public class LoadText : MonoBehaviour
     public GameObject surePanel;
     public GameObject goPanel;
     public GameObject thanksPanel;
+    public GameObject okTextPanel;
  
 
     public void SureButton()
@@ -24,6 +25,14 @@ public class LoadText : MonoBehaviour
         textPanel.SetActive(true);
         surePanel.SetActive(false);
         thanksPanel.SetActive(true);
+    }
+
+    public void PostOkButton()
+    {
+        textPanel.SetActive(true);
+        surePanel.SetActive(false);
+        okTextPanel.SetActive(false);
+        goPanel.SetActive(true);
     }
 
     public void ThanksButton()
