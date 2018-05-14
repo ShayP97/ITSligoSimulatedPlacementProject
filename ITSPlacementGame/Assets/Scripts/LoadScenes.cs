@@ -67,6 +67,11 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("ONFact");
     }
 
+    public void LoadBookStore()
+    {
+        SceneManager.LoadScene("BookStoreMinigame1");
+    }
+
     IEnumerator ChangeScene()
     {
         float fadeTime = GameObject.Find("Fade_Oject").GetComponent<SceneFadeIn>().BeginFadeIn(1);
