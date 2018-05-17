@@ -5,7 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
 {
-    public GameObject postPanel;
+    //public GameObject postPanel;
+
+    public void LoadAbout()
+    {
+        SceneManager.LoadScene("About");
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
     public void LoadMainScene()
     {
