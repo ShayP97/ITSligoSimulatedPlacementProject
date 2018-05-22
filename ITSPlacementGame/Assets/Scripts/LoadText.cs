@@ -22,9 +22,10 @@ public class LoadText : MonoBehaviour
 
     public void SureButton2()
     {
-        textPanel.SetActive(true);
+        textPanel.SetActive(false);
+        textPanel2.SetActive(true);
         surePanel.SetActive(false);
-        thanksPanel.SetActive(true);
+        goPanel.SetActive(true);
     }
 
     public void PostOkButton()
