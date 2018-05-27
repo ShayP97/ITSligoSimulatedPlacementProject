@@ -11,6 +11,7 @@ public class LoadText : MonoBehaviour
     public GameObject goPanel;
     public GameObject thanksPanel;
     public GameObject okTextPanel;
+    public GameObject nextTextPanel;
  
 
     public void SureButton()
@@ -33,6 +34,23 @@ public class LoadText : MonoBehaviour
         textPanel.SetActive(true);
         surePanel.SetActive(false);
         okTextPanel.SetActive(false);
+        goPanel.SetActive(true);
+    }
+
+    public void BookIntroText()
+    {
+        textPanel.SetActive(false);
+        textPanel2.SetActive(true);
+        surePanel.SetActive(false);
+        nextTextPanel.SetActive(true);
+        
+    }
+
+    public void BookText2()
+    {
+        textPanel2.SetActive(false);
+        nextTextPanel.SetActive(false);
+        okTextPanel.SetActive(true);
         goPanel.SetActive(true);
     }
 
