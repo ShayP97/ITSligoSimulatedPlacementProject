@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/BookStoreMinigame1.unity
+- path: Assets/Scenes/BookStore1.unity
   isLoaded: 1
   isActive: 1
