@@ -4,17 +4,22 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class WordSelect : MonoBehaviour
 {
-
-    public GameObject correctPanel;
     public GameObject nextBtn;
+    public GameObject iceCreamPanel;
+
+    public GameObject icePanel;
+    public GameObject creamPanel;
 
     public GameObject btn1;
     public GameObject btn2;
     public GameObject btn3;
     public GameObject btn4;
+
+    public GameObject retryPanel;
 
  //   public string firstWord = "ICECREAM";
 
@@ -28,15 +33,35 @@ public class WordSelect : MonoBehaviour
 		
 	//}
 
-   
-
     public void FirstWord()
     {
-        correctPanel.SetActive(true);
         nextBtn.SetActive(true);
+        iceCreamPanel.SetActive(true);
+
         btn1.SetActive(false);
         btn2.SetActive(false);
         btn3.SetActive(false);
         btn4.SetActive(false);
+
+        icePanel.SetActive(false);
+        creamPanel.SetActive(false);
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("BookStore1");
+    }
+
+    public void WrongWord()
+    {
+        retryPanel.SetActive(true);
+
+        btn1.SetActive(false);
+        btn2.SetActive(false);
+        btn3.SetActive(false);
+        btn4.SetActive(false);
+
+        icePanel.SetActive(false);
+        creamPanel.SetActive(false);
     }
 }
