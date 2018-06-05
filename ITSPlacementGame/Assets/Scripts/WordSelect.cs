@@ -9,10 +9,11 @@ using UnityEngine.SceneManagement;
 public class WordSelect : MonoBehaviour
 {
     public GameObject nextBtn;
-    public GameObject iceCreamPanel;
+    public GameObject resultPanel;
 
-    public GameObject icePanel;
-    public GameObject creamPanel;
+    public GameObject pic1Panel;
+    public GameObject pic2Panel;
+    public GameObject plusPanel;
 
     public GameObject btn1;
     public GameObject btn2;
@@ -33,23 +34,30 @@ public class WordSelect : MonoBehaviour
 		
 	//}
 
-    public void FirstWord()
+    public void CorrectWord()
     {
         nextBtn.SetActive(true);
-        iceCreamPanel.SetActive(true);
+        resultPanel.SetActive(true);
 
         btn1.SetActive(false);
         btn2.SetActive(false);
         btn3.SetActive(false);
         btn4.SetActive(false);
 
-        icePanel.SetActive(false);
-        creamPanel.SetActive(false);
+        pic1Panel.SetActive(false);
+        pic2Panel.SetActive(false);
+
+        plusPanel.SetActive(false);
     }
 
     public void Retry()
     {
         SceneManager.LoadScene("BookStore1");
+    }
+
+    public void Retry2()
+    {
+        SceneManager.LoadScene("BookStore_2");
     }
 
     public void WrongWord()
@@ -61,7 +69,9 @@ public class WordSelect : MonoBehaviour
         btn3.SetActive(false);
         btn4.SetActive(false);
 
-        icePanel.SetActive(false);
-        creamPanel.SetActive(false);
+        pic1Panel.SetActive(false);
+        pic2Panel.SetActive(false);
+
+        plusPanel.SetActive(false);
     }
 }
