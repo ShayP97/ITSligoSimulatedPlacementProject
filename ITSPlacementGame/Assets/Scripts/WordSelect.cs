@@ -60,6 +60,11 @@ public class WordSelect : MonoBehaviour
         SceneManager.LoadScene("BookStore_2");
     }
 
+    public void Retry3()
+    {
+        SceneManager.LoadScene("BookStore_3");
+    }
+
     public void WrongWord()
     {
         retryPanel.SetActive(true);
