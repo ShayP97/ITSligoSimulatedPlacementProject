@@ -87,6 +87,11 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("BookStore_2");
     }
 
+    public void LoadBookStore3()
+    {
+        SceneManager.LoadScene("BookStore_3");
+    }
+
     public void LoadBookStoreIntro()
     {
         SceneManager.LoadScene("BookStoreIntro");
