@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UnlockLevel : MonoBehaviour
 {
+    [SerializeField]
     public GameObject postPanel;
     public GameObject bookPanel;
  
@@ -18,10 +19,11 @@ public class UnlockLevel : MonoBehaviour
     public string postPass;
     public string bookPass;
 
-    //private void Start()
-    //{
-    //    inputFieldMain.text = PlayerPrefs.GetString("Password");
-    //}
+    private void Start()
+    {
+        postPanel.SetActive(true);
+        //inputFieldMain.text = PlayerPrefs.GetString("Password");
+    }
 
     public void UnlockPost()
     {
@@ -30,9 +32,9 @@ public class UnlockLevel : MonoBehaviour
         if (postPass == "STAMPS")
         {           
             postPanel.SetActive(true);
-            //SavePass(postPass);
+            PlayerPrefs.SetString("Password", postPass);
         }
-        PlayerPrefs.SetString("Password", "STAMPS");
+       // PlayerPrefs.SetString("Password", postPass);
     }
 
     public void UnlockBook()

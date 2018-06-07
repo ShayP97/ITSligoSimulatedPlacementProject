@@ -96,6 +96,10 @@ public class LoadScenes : MonoBehaviour
     {
         SceneManager.LoadScene("BookStoreIntro");
     }
+    public void LoadBookStoreOutro()
+    {
+        SceneManager.LoadScene("BookStoreOutro");
+    }
 
     IEnumerator ChangeScene()
     {
