@@ -101,6 +101,11 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("BookStoreOutro");
     }
 
+    public void LoadEnding()
+    {
+        SceneManager.LoadScene("Ending");
+    }
+
     IEnumerator ChangeScene()
     {
         float fadeTime = GameObject.Find("Fade_Oject").GetComponent<SceneFadeIn>().BeginFadeIn(1);
