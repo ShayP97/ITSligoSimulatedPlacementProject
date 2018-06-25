@@ -8,6 +8,9 @@ public class UnlockLevel : MonoBehaviour
 {
     public GameObject postPanel;
     public GameObject bookPanel;
+
+    private TouchScreenKeyboard keyboard;
+
  
     [SerializeField]
     public Text inputFieldMain;
@@ -15,8 +18,10 @@ public class UnlockLevel : MonoBehaviour
     [SerializeField]
     public Text inputFieldBook;
 
-    public string postPass;
+    public string postPass = "STAMPS";
     public string bookPass;
+
+    public static bool visible;
 
     private void Start()
     {
@@ -24,10 +29,25 @@ public class UnlockLevel : MonoBehaviour
         //inputFieldMain.text = PlayerPrefs.GetString("Password");
     }
 
+    //void OnGUI()
+    //{
+    //    postPass = GUI.TextField(new Rect(300, 80, 200, 80), postPass, 25);
+    //    keyboard = TouchScreenKeyboard.Open(postPass, TouchScreenKeyboardType.Default, false, false, true, true);
+
+    //    if (GUI.Button(new Rect(10, 50, 200, 100), "Default"))
+    //    {
+    //        keyboard = TouchScreenKeyboard.Open(postPass, TouchScreenKeyboardType.Default);
+    //    }
+
+    //    TouchScreenKeyboard.hideInput = true;
+
+
+    //}
+
     public void UnlockPost()
     {
         postPass = inputFieldMain.text;
-      
+        
         if (postPass == "STAMPS")
         {           
             postPanel.SetActive(true);
