@@ -15,13 +15,8 @@ public class UnlockLevel : MonoBehaviour
     [SerializeField]
     public Text inputFieldMain;
 
-    [SerializeField]
-    public Text inputFieldBook;
-
-    public string postPass = "STAMPS";
+    public string postPass;
     public string bookPass;
-
-    public static bool visible;
 
     private void Start()
     {
@@ -53,12 +48,11 @@ public class UnlockLevel : MonoBehaviour
             postPanel.SetActive(true);
             PlayerPrefs.SetString("Password", postPass);
         }
-       // PlayerPrefs.SetString("Password", postPass);
     }
 
     public void UnlockBook()
     {
-        bookPass = inputFieldBook.text;
+        bookPass = inputFieldMain.text;
 
         if(bookPass == "PAGES")
         {
@@ -66,10 +60,16 @@ public class UnlockLevel : MonoBehaviour
         }
     }
 
-    //public void SavePassOnLoad(string pass)
-    //{        
-    //    inputFieldMain.text = pass;
-    //}
+    public void BackButton()
+    {
+        inputFieldMain.text = ""; //Clears the current display
+
+        //if (wrongPanel == true)
+        //{
+        //    wrongPanel.SetActive(false);
+        //}
+
+    }
 
     public void LevelReLoad()
     {
