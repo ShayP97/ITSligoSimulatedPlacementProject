@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
 {
-    //public GameObject postPanel;
-
+   
     public void LoadAbout()
     {
         SceneManager.LoadScene("About");
@@ -20,12 +19,11 @@ public class LoadScenes : MonoBehaviour
     public void LoadMainScene()
     {
         SceneManager.LoadScene("Main Scene");
-        //postPanel.SetActive(true);
     }
 
-    public void ReLoadMainScene()
+    public void LoadMainScene2()
     {
-        SceneManager.LoadScene("Main Scene");
+        SceneManager.LoadScene("MainScene_2");
     }
 
     public void LoadCafe()
