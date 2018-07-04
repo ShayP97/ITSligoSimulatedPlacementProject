@@ -7,33 +7,33 @@ public class LoadText : MonoBehaviour
 {
     public GameObject textPanel;
     public GameObject textPanel2;
-    public GameObject surePanel;
+    public GameObject TextPanel3;
+    public GameObject btnPanel;
     public GameObject goPanel;
     public GameObject thanksPanel;
-    public GameObject okTextPanel;
     public GameObject nextTextPanel;
  
 
-    public void SureButton()
+    public void LoadOneText()
     {
         textPanel.SetActive(true);
-        surePanel.SetActive(false);
+        btnPanel.SetActive(false);
         goPanel.SetActive(true);
     }
 
-    public void SureButton2()
+    public void LoadThreeText()
     {
         textPanel.SetActive(false);
         textPanel2.SetActive(true);
-        surePanel.SetActive(false);
-        goPanel.SetActive(true);
+        btnPanel.SetActive(true);
+        goPanel.SetActive(false);
     }
 
     public void PostOkButton()
     {
         textPanel.SetActive(true);
-        surePanel.SetActive(false);
-        okTextPanel.SetActive(false);
+        btnPanel.SetActive(false);
+        textPanel2.SetActive(false);
         goPanel.SetActive(true);
     }
 
@@ -41,7 +41,7 @@ public class LoadText : MonoBehaviour
     {
         textPanel.SetActive(false);
         textPanel2.SetActive(true);
-        surePanel.SetActive(false);
+        btnPanel.SetActive(false);
         nextTextPanel.SetActive(true);
         
     }
@@ -50,7 +50,7 @@ public class LoadText : MonoBehaviour
     {
         textPanel2.SetActive(false);
         nextTextPanel.SetActive(false);
-        okTextPanel.SetActive(true);
+        TextPanel3.SetActive(true);
         goPanel.SetActive(true);
     }
 
