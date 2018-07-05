@@ -34,5 +34,9 @@ public class MusicPlaying : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if(SceneManager.GetActiveScene().name == "MainScene_2")
+        {
+            Destroy(gameObject);
+        }
     }
 }
