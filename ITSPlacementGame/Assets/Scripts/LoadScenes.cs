@@ -103,6 +103,10 @@ public class LoadScenes : MonoBehaviour
     {
         SceneManager.LoadScene("Ending");
     }
+    public void LoadMoreInfo()
+    {
+        SceneManager.LoadScene("MoreInfo");
+    }
 
     IEnumerator ChangeScene()
     {

@@ -90,6 +90,8 @@
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
     <Compile Include="Assets\Scripts\LoadText.cs" />
     <Compile Include="Assets\Scripts\MusicPlaying.cs" />
+    <Compile Include="Assets\Scripts\OpenLink.cs" />
+    <Compile Include="Assets\Scripts\PictureFlip.cs" />
     <Compile Include="Assets\Scripts\ProvinceSelect.cs" />
     <Compile Include="Assets\Scripts\SceneFadeIn.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />

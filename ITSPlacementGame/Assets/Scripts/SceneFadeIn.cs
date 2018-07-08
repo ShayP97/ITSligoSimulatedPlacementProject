@@ -5,7 +5,7 @@ using UnityEngine;
 public class SceneFadeIn : MonoBehaviour {
 
     public Texture2D fadeTexture;
-    private float fadeSpeed = 0.8f;
+    private float fadeSpeed = 0.5f;
 
     private int drawdepth = -1000;
     private float alpha = 1.0f;
