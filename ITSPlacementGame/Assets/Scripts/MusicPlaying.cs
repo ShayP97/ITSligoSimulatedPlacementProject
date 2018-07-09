@@ -38,5 +38,9 @@ public class MusicPlaying : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if(SceneManager.GetActiveScene().name == "Ending")
+        {
+            Destroy(gameObject);
+        }
     }
 }
