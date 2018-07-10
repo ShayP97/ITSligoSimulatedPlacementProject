@@ -136,6 +136,10 @@
       <Project>{9713CB28-7A87-5739-17C7-9FEECA42B286}</Project>
       <Name>ITSPlacementGame</Name>
     </ProjectReference>
+    <ProjectReference Include="ITSPlacementGame.unityproj">
+      <Project>{9713CB28-7A87-5739-17C7-9FEECA42B286}</Project>
+      <Name>ITSPlacementGame</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Auto Letterbox\Editor\ForceCameraRatioEditor.cs" />

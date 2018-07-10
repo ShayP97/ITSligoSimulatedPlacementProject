@@ -26,6 +26,11 @@ public class LoadScenes : MonoBehaviour
         SceneManager.LoadScene("MainScene_2");
     }
 
+    public void LoadMainScene3()
+    {
+        SceneManager.LoadScene("MainScene_3");
+    }
+
     public void LoadCafe()
     {
         SceneManager.LoadScene("Cafe");
