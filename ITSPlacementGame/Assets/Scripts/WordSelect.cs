@@ -22,18 +22,6 @@ public class WordSelect : MonoBehaviour
 
     public GameObject retryPanel;
 
- //   public string firstWord = "ICECREAM";
-
-	//// Use this for initialization
-	//void Start () {
-		
-	//}
-	
-	//// Update is called once per frame
-	//void Update () {
-		
-	//}
-
     public void CorrectWord()
     {
         nextBtn.SetActive(true);

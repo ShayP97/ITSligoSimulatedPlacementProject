@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
-{
-   
+{   
     public void LoadAbout()
     {
         SceneManager.LoadScene("About");
