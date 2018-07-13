@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\Settings.cs" />
     <Compile Include="Assets\Scripts\UnlockLevel.cs" />
     <Compile Include="Assets\Scripts\WordSelect.cs" />
+    <Compile Include="Assets\Scripts\WordShuffle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
