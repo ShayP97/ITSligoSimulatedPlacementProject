@@ -84,6 +84,7 @@
     <Compile Include="Assets\Auto Letterbox\ForceCameraRatio.cs" />
     <Compile Include="Assets\Scripts\CafeOneNextScene.cs" />
     <Compile Include="Assets\Scripts\Calculator.cs" />
+    <Compile Include="Assets\Scripts\FadeText.cs" />
     <Compile Include="Assets\Scripts\FixedScreenWidth.cs" />
     <Compile Include="Assets\Scripts\Hint.cs" />
     <Compile Include="Assets\Scripts\LoadScenes.cs" />
@@ -95,9 +96,9 @@
     <Compile Include="Assets\Scripts\RandomWordSelect.cs" />
     <Compile Include="Assets\Scripts\SceneFadeIn.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
+    <Compile Include="Assets\Scripts\TextFadeIn.cs" />
     <Compile Include="Assets\Scripts\UnlockLevel.cs" />
     <Compile Include="Assets\Scripts\WordSelect.cs" />
-    <Compile Include="Assets\Scripts\WordShuffle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
