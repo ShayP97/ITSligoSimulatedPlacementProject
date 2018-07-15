@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class FadeText : MonoBehaviour
 {
-
-	// Use this for initialization
 	void Start ()
     {
         gameObject.GetComponent<Graphic>().FadeText();
